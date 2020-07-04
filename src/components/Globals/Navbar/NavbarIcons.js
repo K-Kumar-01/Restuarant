@@ -17,7 +17,7 @@ const NavbarIcons = () => {
         icon: <FaInstagram className="icon instagram-icon" />,
       },
       {
-        id: 1,
+        id: 3,
         url: "https://www.github.com/K-Kumar-01",
         icon: <FaGithub className="icon github-icon" />,
       },
@@ -27,7 +27,7 @@ const NavbarIcons = () => {
     <IconWrapper>
       {state.icons.map(({ id, url, icon }) => {
         return (
-          <a key={id} href={url} target="_blank" rel="noopener noreferrer">
+          <a key={`icon-${id}`} href={url} target="_blank" rel="noopener noreferrer">
             {icon}
           </a>
         )

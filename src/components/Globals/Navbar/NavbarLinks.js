@@ -32,7 +32,7 @@ const NavbarLinks = props => {
     <LinkWrapper open={props.navbarOpen}>
       {state.links.map(({ id, name, path }) => {
         return (
-          <li key={id}>
+          <li key={`link-${id}`}>
             <Link to={path} className="nav-link">
               {name}
             </Link>

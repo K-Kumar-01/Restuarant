@@ -10,12 +10,14 @@ import PropTypes from "prop-types"
 
 import "./layout.css"
 import Navbar from "./Globals/Navbar/Navbar"
+import Footer from "./Globals/Footer"
 
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Navbar />
       {children}
+      <Footer/>
     </React.Fragment>
   )
 }
